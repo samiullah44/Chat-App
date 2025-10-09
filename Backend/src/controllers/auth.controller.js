@@ -112,7 +112,7 @@ export const checkAuth=(req,res)=>{
    try{
       res.status(200).json(req.user);
    }catch(error){
-   onsole.log("Error in Check Auth controller",error.message);
+   console.log("Error in Check Auth controller",error.message);
     res.status(500).json({message:"Internal Server Error"});
    }
 }
