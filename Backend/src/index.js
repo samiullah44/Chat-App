@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 app.use(cookieParser());
 
 app.use(cors({
-  origin: ["https://chatingwebs.netlify.app/signup"], // your frontend
+  origin: ["https://chatingwebs.netlify.app"], // your frontend
   credentials: true
 }));
 
@@ -29,13 +29,12 @@ app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoute);
 
 
-if(process.env.NODE_ENV === "production"){
-  app.use(express.static(path.join(__dirname, "../frontend/dist")));
-  
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
-});
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(__dirname, "../frontend/dist")));
+//   app.get("/*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
+//   });
+// }
 
 
 // Start server
