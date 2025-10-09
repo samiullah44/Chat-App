@@ -33,7 +33,7 @@ const LoginPage = () => {
       {/* Left side form */}
       <div className="flex items-center justify-center p-6 sm:p-12">
         <div className="w-full max-w-md">
-          <div className="bg-white/10 dark:bg-black/20 backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl py-6 px-8 space-y-6 animate-fadeIn">
+          <div className=" backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl py-6 px-8 space-y-6 animate-fadeIn">
             {/* Logo & Title */}
             <div className="text-center">
               <div className="flex justify-center mb-4">

@@ -47,7 +47,7 @@ const SignUpPage = () => {
       <div className="flex items-center justify-center p-6 sm:p-12 relative z-10">
         <div className="w-full max-w-md">
           {/* Card container */}
-          <div className="bg-white/10 dark:bg-black/20 backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl py-4 px-8 space-y-5 animate-fadeIn">
+          <div className="backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl py-4 px-8 space-y-5 animate-fadeIn">
             {/* Logo & Title */}
             <div className="text-center">
               <div className="flex justify-center mb-4">

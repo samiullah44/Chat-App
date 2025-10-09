@@ -28,7 +28,6 @@ const App = () => {
     );
   }
 
-  // Detect if current page is "chat layout" (full height, no page scroll)
   const isChatLayout =
     location.pathname === "/" || location.pathname === "/profile";
 
